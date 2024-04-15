@@ -1,0 +1,67 @@
+body{background: linear-gradient(100deg, rgb(82, 82, 82), white );}
+
+nav{ background-color: black;
+    display: flex;
+    justify-content: space-around;}
+
+.eu{display: flex;
+    justify-content: center;
+    margin-top: 5%;}
+
+.eu img, .projetos img, .sobre img{border: solid;}
+
+.eu img{border-radius: 100%;
+    border: solid;}
+
+h1{text-align: center;
+    padding-top: 5%;}
+
+.tudo{display: grid;
+    grid-template-columns: repeat(2, auto);
+    padding-top: 5%;
+    grid-template-areas: "h1 h1"
+        "projetos sobre"
+        "footer footer";}
+
+h1{display: grid;
+    grid-area: "h1";}
+
+footer{display: grid;
+    grid-area: "footer";
+    background-color: white;
+    text-align: center;
+    margin-top: 5%;}
+
+.projetos{display: grid;
+    grid-area: "projetos";
+    justify-items: center;}
+
+.projetos a, .sobre a{display: flex;
+    justify-content: center;}
+
+.sobre{display: grid;
+    grid-area: "sobre";
+    justify-items: center;}
+
+.projetos a, .sobre a{font-size: large;
+    text-decoration: none;
+    margin-top: 5%;
+    color: black;}
+
+a:hover{transform: scale(1.1);
+    transition: all 2s ease;}
+
+footer img:hover{transform: scale(1.1);
+    transition: all 2s ease;}
+
+@media only screen and (max-width:750px){
+
+    .tudo{display: flex;
+        flex-direction: column;
+        text-align: center;}
+
+    .projetos img, .sobre img{width: 30%;}
+
+    a img{width: 10%;}
+    
+}

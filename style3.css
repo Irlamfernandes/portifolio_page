@@ -1,0 +1,30 @@
+body{background: linear-gradient(100deg, rgb(82, 82, 82), white );}
+
+h1{font-size: 400%;
+    text-align: center;}
+
+.primeira{text-align: center;}
+
+p{font-size: x-large;
+    text-align: center;}
+
+.link{text-align: center;
+    margin: 5%;}
+
+.galeria{display: flex;
+    justify-content: space-around;}
+
+a{margin: 5%;}
+
+.link img:hover{transform: scale(1.5);
+    transition: all 2s ease;}
+
+@media only screen and (max-width:750px) {
+
+    .galeria{display: flex;
+        flex-direction: column;
+        align-items: center;}
+
+    .galeria img, .primeira img{width: 100%;
+        padding-top: 5%;}
+}

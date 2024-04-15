@@ -1,0 +1,35 @@
+body{background: linear-gradient(100deg, rgb(82, 82, 82), white );}
+
+.titulo{text-align: center;}
+
+img{border: solid;
+    border-radius: 100%;}
+
+h1{font-size: xx-large;}
+
+p{font-size: x-large;}
+
+a{text-decoration: none;
+    color:  black;
+    font-size: large;}
+
+.projeto{display: flex;
+    flex-direction: column;
+    margin: 5%;
+    align-items: center;}
+
+.projeto p{padding-top: 5%;}
+
+img:hover{transform: scale(1.5);
+    transition: transform 2s ease;}
+
+a:hover{transform: scale(1.2);
+    transition: transform 2s ease;}
+
+@media only screen and (max-width:750px) {
+
+    img{width: 40%;
+    margin: 5%;}
+
+    
+}
