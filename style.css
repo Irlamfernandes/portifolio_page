@@ -2,7 +2,8 @@ body{background: linear-gradient(100deg, rgb(82, 82, 82), white );}
 
 nav{ background-color: black;
     display: flex;
-    justify-content: space-around;}
+    justify-content: space-around;
+   font-size: 10%}
 
 .eu{display: flex;
     justify-content: center;
